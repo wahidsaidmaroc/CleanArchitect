@@ -10,6 +10,13 @@ public class Customer : BaseEntity
     {
     }
 
+    /// <summary>
+    /// for create Customer object
+    /// </summary>
+    /// <param name="firstName">First name param type string</param>
+    /// <param name="lastName">test laste </param>
+    /// <param name="email"></param>
+    /// <param name="address"></param>
     public Customer(string firstName, string lastName, string email, Address address)
     {
         Update(firstName, lastName, email, address);

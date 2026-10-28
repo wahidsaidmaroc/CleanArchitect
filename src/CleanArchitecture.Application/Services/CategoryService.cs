@@ -8,7 +8,8 @@ public sealed class CategoryService(
     IRepository<Category> categories,
     IUnitOfWork unitOfWork) : ICategoryService
 {
-    public async Task<IReadOnlyList<CategoryResponse>> ListAsync(CancellationToken cancellationToken) =>
+    public async Task<IReadOnlyList<CategoryResponse>> 
+        ListAsync(CancellationToken cancellationToken) =>
         (await categories.ListAsync(cancellationToken)).Select(Mapping.ToDto).ToArray();
 
     public async Task<CategoryResponse?> GetByIdAsync(Guid id, CancellationToken cancellationToken)

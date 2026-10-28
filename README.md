@@ -1,6 +1,6 @@
 # CleanArchitecture
 
-API REST e-commerce en .NET 10, organisée en Clean Architecture sans CQRS ni MediatR.
+API REST e-commerce en .NET 10, organisée en Clean Architecture 
 
 ## Structure
 
